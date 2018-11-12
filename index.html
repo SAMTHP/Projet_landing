@@ -3,11 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Landig page</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="shortcut icon" type="text/css" href="images/icon.png" >
 </head>
 <body>
-	<header>
+	<div class="head">
 		<nav >
 				<div class="navbar1">
 					<h5>MonSite.com</h5>
@@ -28,32 +29,40 @@
 						</a>
 				</div>
 		</nav>
-	</header>
+	</div>
 
 	<section class="title">
 		<h1>Title</h1>
 	</section>
 
-	<div class="container">
-		
 
-		<section>
-			<article>
-				<div class="element">
-					<img src="images/img_article1.png">
+
+			<article  class="card">
+				<header class="card__thumb">
+					<img src="http://lorempicsum.com/futurama/370/235/4">
+				</header>
+				<div class="card__date">
+					<span class="card__date__day">12</span>
+					<span class="card__date__day">Novembre</span>
 				</div>
-				<div class="element">
-					<h2>Business plan</h2>
-					<p>
-						Le business plan ou plan d'affaires, aussi appelé plan de développement (business development)1 ou encore stratégie d’affaires, formalise par écrit les projections d'évolution d'une entreprise[...]
-						
+				<div class="card__body">
+					<div class="card__catégory"><a href="#">Photos</a></div>
+					<div class="card__title"><a href="#">New age coming !!!</a></div>
+					<div class="card__subtitle">The IA will be everywhere....</div>
+					<p class="card__description">
+						Will robots become self-aware? Will they have rights? Will they be in charge? Here are five scenarios from our future dominated by AI ... <br>
+						In June of 1956, A few dozen scientists and mathematicians from all around the country gathered for a meeting on the campus of Dartmouth College. <br>
+						Read more: https://www.smithsonianmag.com/innovation/artificial-intelligence-future-scenarios-180968403/#F33QRUbwjTCeGe7F.99
 					</p>
+					<footer class="card__footer">
+						<span class="icon icon--time"></span><a href="#">6 min</a>
+						<span class="icon icon--comment"></span><a href="#">36 comments</a>
+					</footer>
 				</div>
 		    </article>
-		</section>
-		</div>
 
-		<footer>
+
+		<div class="footer">
 			<div id="social">
 				<div class="net">
 						<a class="net" href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebook"></a>

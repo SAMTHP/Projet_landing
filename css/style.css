@@ -17,6 +17,7 @@ body {
 .card {
 	width: 370px;
 	position: absolute;
+	overflow: hidden;
 	top: 60%;
 	left: 50%;
 	transform: translateX(-50%) translateY(-50%);
@@ -103,6 +104,12 @@ body {
 .card__body {
 	position: relative;
 	padding: 20px;
+	height: 185px;
+	transition: height 0.3s;
+}
+
+.card__body:hover {
+	height: 330px;
 }
 
 .card__category {
@@ -127,6 +134,15 @@ body {
 	font-size: 22px;
 	font-weight: bold;
 	color: #000;
+	opacity:0.6;
+	text-decoration: none;
+	text-shadow: 0px 5px 5px rgba(0,0,0,0.6);
+	transition: text-shadow 0.3s;
+}
+
+.card__title:hover {
+	text-shadow: 0px 0px 0px rgba(0,0,0,0);
+	opacity: 1;
 }
 
 .card__subtitle {
@@ -138,9 +154,17 @@ body {
 }
 
 .card__description{
+
 	color: #666c74;
 	font-size: 14px;
 	line-height: 27px;
+
+	opacity: 0.2;
+	transition: opacity 0.3s;
+}
+
+.card__description:hover {
+	opacity: 1;
 }
 
 .card__footer{
@@ -159,6 +183,7 @@ body {
 	background: url(../images/icon-comment.png);
 	width: 14px;
 	height: 14px;
+	margin-left: 12px;
 	padding-right: 3px;
 }
 
@@ -211,6 +236,5 @@ a {
 
 a:hover {
 	text-decoration: none;
-	color: gold;
 }
 

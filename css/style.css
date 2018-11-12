@@ -1,4 +1,8 @@
-		* { box-sizing: border-box; }
+$duration: 0.3s;
+$color: #EF5A31;
+
+* { box-sizing: border-box; }
+
 html {
 	height : 100%;
 }
@@ -11,16 +15,162 @@ body {
 }
 
 .card {
+	width: 370px;
 	position: absolute;
 	top: 60%;
 	left: 50%;
 	transform: translateX(-50%) translateY(-50%);
 	background-color: #fff;
+	box-shadow: 0px 0px 20px;
+	transition: box-shadow $duration;
+
+}
+
+.a_card{
+		color: inherit;
+		text-decoration: none;
+}
+
+
+.card:hover{
 	box-shadow: 0px 0px 50px;
 }
 
+.card__date {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+
+	width: 50px;
+	height: 50px;
+	padding-top: 13px;
+
+	color: #fff;
+	text-align: center;
+	line-height: 16px;
+	font-weight: bold;
+
+	background-color: #f05d23;
+	border-radius: 50%;
+
+}
+
+.card__date__day {
+	display: block;
+	font-size: 18px;
+}
+
+.card__date__month {
+	display: block;
+	font-size: 8px;
+	text-transform: uppercase;
+}
+
+.card__thumb {
+	height: 235px;
+	overflow: hidden;
+	background-color: #000;
+	transition: height 0.3s;
+
+}
+
+.image_thumb{
+	display: block;
+	opacity: 1;
+	transition-property: opacity, transform;
+	transition-duration:  0.3s;
+}
+
+.image_thumb:hover{
+	opacity: 0.6;
+	transform: scale(1.2);
+}
+
+.card__thumb:hover & img{
+	opacity: 0.6;
+	transform: scale(1.2);
+}
+
+.card__thumb:hover {
+	height: 90px;
+}
+
+
+.card:hover .card__thumb img {
+	opacity: 0.7;
+}
+
+.card__body {
+	position: relative;
+	padding: 20px;
+}
+
+.card__category {
+	position: absolute;
+	left: 0;
+	top: -25px;
+
+	height: 25px;
+	padding: 0 15px;
+
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+
+	background-color: #f05d23;
+}
+
+.card__title {
+	margin: 0;
+	padding: 0 0 10px 0;
+
+	font-size: 22px;
+	font-weight: bold;
+	color: #000;
+}
+
+.card__subtitle {
+	margin: 0;
+	padding: 0 0 10px 0;
+
+	font-size: 19px;
+	color: #f05d23;
+}
+
+.card__description{
+	color: #666c74;
+	font-size: 14px;
+	line-height: 27px;
+}
+
+.card__footer{
+	position: absolute;
+
+	font-size: 11px;
+	color: #A3A9AB
+}
+
+.icon {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.icon--comment {
+	background: url(../images/icon-comment.png);
+	width: 14px;
+	height: 14px;
+	padding-right: 3px;
+}
+
+.icon--like {
+	background: url(../images/icon-like.png);
+	width: 14px;
+	height: 14px;
+	padding-right: 3px;
+}
+
+
 nav {
-	/*width: 300px;*/
 	display: flex;
 	justify-content: space-around;
 	align-items: center;

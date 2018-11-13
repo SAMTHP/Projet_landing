@@ -11,10 +11,35 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
 	line-height: 1.4;
-	background-image: url("http://4.bp.blogspot.com/-cwCqETVBFTs/U2352w2C2vI/AAAAAAAALmo/tqDxJ_RfHd4/s1600/obama-new-world-order.jpg"); ;
+	background-image: url("http://4.bp.blogspot.com/-cwCqETVBFTs/U2352w2C2vI/AAAAAAAALmo/tqDxJ_RfHd4/s1600/obama-new-world-order.jpg");
+	background-attachment: fixed;
+	width: auto;
+	height: auto;
 }
 
-.card {
+head {
+	width: 100%;
+	border: solid 1px green;
+}
+
+.avatar {
+	margin-left: 10px;
+}
+
+.card1 {
+	width: 370px;
+	position: absolute;
+	overflow: hidden;
+	top: 60%;
+	left: 50%;
+	transform: translateX(-180%) translateY(-50%);
+	background-color: #fff;
+	box-shadow: 0px 0px 20px;
+	transition: box-shadow 0.3s;
+
+}
+
+.card2 {
 	width: 370px;
 	position: absolute;
 	overflow: hidden;
@@ -23,7 +48,20 @@ body {
 	transform: translateX(-50%) translateY(-50%);
 	background-color: #fff;
 	box-shadow: 0px 0px 20px;
-	transition: box-shadow $duration;
+	transition: box-shadow 0.3s;
+
+}
+
+.card3 {
+	width: 370px;
+	position: absolute;
+	overflow: hidden;
+	top: 60%;
+	left: 50%;
+	transform: translateX(80%) translateY(-50%);
+	background-color: #fff;
+	box-shadow: 0px 0px 20px;
+	transition: box-shadow 0.3s;
 
 }
 
@@ -33,7 +71,15 @@ body {
 }
 
 
-.card:hover{
+.card1:hover{
+	box-shadow: 0px 0px 50px;
+}
+
+.card2:hover{
+	box-shadow: 0px 0px 50px;
+}
+
+.card3:hover{
 	box-shadow: 0px 0px 50px;
 }
 
@@ -97,7 +143,15 @@ body {
 }
 
 
-.card:hover .card__thumb img {
+.card1:hover .card__thumb img {
+	opacity: 0.7;
+}
+
+.card2:hover .card__thumb img {
+	opacity: 0.7;
+}
+
+.card3:hover .card__thumb img {
 	opacity: 0.7;
 }
 
@@ -199,15 +253,27 @@ nav {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	background-color: rgb(250, 244, 244);
+	background-color: rgb(250, 244, 244) ;
+	opacity: 0.6;
+	width: 100% !important;
+	border: solid 1px green;
+	/*margin: -5px 0px 10px 0px;*/
+
 }
 
 .footer {
 
-	position: absolute;
-	top: 100%;
-	left: 50%;
-	transform: translateX(-50%) translateY(-50%);
+	position: fixed;
+/*	top: 100%;
+	left: 50%;*/
+	left: 0;
+   	bottom: 0;
+   	width: 100%;
+   	height: 3em;
+/*	transform: translateX(-50%) translateY(-50%);
+*/	box-shadow: inset 0 0 7em #f0f7ffd7;
+	display: flex;
+	justify-content: center;
 
 }
 
@@ -222,7 +288,7 @@ nav {
 }
 
 .title {
-
+	
 	text-align: center;
 }
 
@@ -230,6 +296,7 @@ nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	width: 65%;
 }
 
 a {
@@ -252,7 +319,7 @@ a:hover {
 
 .wrap-bouton {
 	position: absolute;
-	top: 110px;
+	top: 130px;
 	left: 50%;
 	transform: translateX(-50%) translateY(-50%);
 	display: flex;
@@ -263,6 +330,7 @@ a:hover {
 .btn-red {
 	margin-right: 75px;
 	background-color: red;
+	opacity: 0.5;
 	border-radius: 25%;
 	display: inline-block;
 	box-shadow:
@@ -274,6 +342,7 @@ a:hover {
 .btn-blue {
 	background-color: blue;
 	border-radius: 25%;
+	opacity: 0.5;
 	display: inline-block;
 	box-shadow:
 		0 4px 0 blue,
@@ -297,5 +366,44 @@ a:hover {
 
 }
 
+.menu1 {
+	height: 63px;
+	width: 72px;
+	transition: 0.3s;
+}
+.menu1:hover {
+	background-image: url(../images/illuminati.png);
+	color: rgba(0,0,0,0%);
+	border-radius: 1px;
+	height: 63px;
+	text-transform: opacity 0;
+}
 
+.menu2 {
+	height: 63px;
+	width: 72px;
+	transition: 0.3s;
+}
+.menu2:hover {
+	background-image: url(../images/freemason.png);
+
+	border-radius: 1px;
+	height: 63px;
+	text-decoration-color: none;
+
+}
+
+.menu3 {
+	height: 63px;
+	width: 72px;
+	transition: 0.3s;
+}
+.menu3:hover {
+	background-image: url(../images/pentacle.png);
+
+	border-radius: 1px;
+	height: 63px;
+	text-decoration-color: none;
+
+}
 

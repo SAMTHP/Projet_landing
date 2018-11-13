@@ -11,7 +11,7 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
 	line-height: 1.4;
-	background-color: #d8e0e5;
+	background-image: url("http://4.bp.blogspot.com/-cwCqETVBFTs/U2352w2C2vI/AAAAAAAALmo/tqDxJ_RfHd4/s1600/obama-new-world-order.jpg"); ;
 }
 
 .card {
@@ -208,10 +208,13 @@ nav {
 	top: 100%;
 	left: 50%;
 	transform: translateX(-50%) translateY(-50%);
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
+
 }
+
+/*.facebook {
+	margin-right: 75px;
+}*/
+
 
 .navbar5  {
 	display: flex;
@@ -223,9 +226,9 @@ nav {
 	text-align: center;
 }
 
-#social {
+#wrap {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
 }
 
@@ -237,4 +240,62 @@ a {
 a:hover {
 	text-decoration: none;
 }
+
+.bouton span {
+	color: #fff;
+	display: inline-block;
+	padding: 10px 15px;
+	border-radius: 6px;
+
+}
+
+
+.wrap-bouton {
+	position: absolute;
+	top: 110px;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.btn-red {
+	margin-right: 75px;
+	background-color: red;
+	border-radius: 25%;
+	display: inline-block;
+	box-shadow:
+		0 4px 0 red,
+		0 20px 15px black;
+	transition: 0.3s;
+}
+
+.btn-blue {
+	background-color: blue;
+	border-radius: 25%;
+	display: inline-block;
+	box-shadow:
+		0 4px 0 blue,
+		0 20px 15px black;
+	transition: 0.3s;
+}
+
+.btn-blue:hover {
+	box-shadow:
+		0 2px 0 blue,
+		0 15px 12px black;
+	transform: translate(0,10px);
+}
+
+
+.btn-red:hover {
+	box-shadow:
+		0 2px 0 red,
+		0 15px 12px black;
+	transform: translate(0,10px);
+
+}
+
+
 

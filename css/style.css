@@ -11,7 +11,7 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
 	line-height: 1.4;
-	background-image: url("http://4.bp.blogspot.com/-cwCqETVBFTs/U2352w2C2vI/AAAAAAAALmo/tqDxJ_RfHd4/s1600/obama-new-world-order.jpg");
+	background-image: url("../images/background.jpg");
 	background-attachment: fixed;
 	width: auto;
 	height: auto;
@@ -256,8 +256,7 @@ nav {
 	background-color: rgb(250, 244, 244) ;
 	opacity: 0.6;
 	width: 100% !important;
-	border: solid 1px green;
-	/*margin: -5px 0px 10px 0px;*/
+
 
 }
 
@@ -301,7 +300,7 @@ nav {
 
 a {
 	text-decoration: none;
-	color: grey;
+	color: orange;
 }
 
 a:hover {
@@ -404,6 +403,63 @@ a:hover {
 	border-radius: 1px;
 	height: 63px;
 	text-decoration-color: none;
-
 }
 
+.wrap-test {
+	display: flex;
+	justify-content: center;
+}
+
+section {
+ display: none;
+ padding: 20px 0 0;
+ border-top: 1px solid orange;
+ color: #FFF;
+ box-shadow: inset 0 0 7em black;
+}
+
+input {
+ display: none;
+}
+
+label {
+ display: inline-block;
+ margin: 0 0 -1px;
+ padding: 15px 25px;
+ font-weight: 600;
+ text-align: center;
+ color: #B5BAD0;
+ border: 1px solid transparent;
+}
+
+label:before {
+ font-family: 'Secular One', sans-serif;
+ font-weight: normal;
+ margin-right: 10px;
+}
+
+label[for*='1']:before { content: '\f1cb'; }
+label[for*='2']:before { content: '\f17d'; }
+label[for*='3']:before { content: '\f16c'; }
+label[for*='4']:before { content: '\f171'; }
+
+label:hover {
+ color: #FFF;
+}
+
+input:checked + label {
+ color: #163772;
+ border: 1px solid #abc;
+ border-top: 2px solid orange;
+ border-bottom: 1px solid #ff97ac;
+ box-shadow: inset 0 0 7em white;
+}
+
+/* Show content */
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4 {
+ display: block;
+}
